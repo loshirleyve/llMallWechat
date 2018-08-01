@@ -1,0 +1,250 @@
+body{
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  background: #f2f2f2;
+}
+.banner{
+  background: url(../image/background3_I6.png) no-repeat;
+  background-position: left top;
+  background-size: 100% 100%;
+  position: relative;
+  padding: 20px 15px;
+  color: #ffffff;
+  .rule{
+    color: white;
+    text-decoration: none;
+    padding: .5em 0;
+    font-size: 12px;
+    position: absolute;
+    right: 16px;
+    top: 5px;
+  }
+  .head{
+    .user{
+      width: 28px;
+      height: 28px;
+      vertical-align: -7px;
+    }
+    .level{
+      font-size: 16px;
+    }
+    .face{
+      width: 16px;
+      height: 16px;
+      vertical-align: -2px;
+    }
+  }
+  .progress-container{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    .progress-wrap{
+      width: 50%;
+      height: 2px;
+      background: rgba(0, 0, 0, .2);
+      border-radius: 2px;
+      position: relative;
+      .progress-fill{
+        display: inline-block;
+        background: #ffee00;
+        width: 0;
+        height: 2px;
+        position: absolute;
+      }
+      .progress-info{
+        width: 34px;
+        height: 24px;
+        left: 0;
+        top: -26px;
+        transform: translateX(-50%);
+        background: url("../image/location.png") no-repeat;
+        background-size: 34px 24px;
+        font-size: 12px;
+        text-align: center;
+        background-position: center center;
+        position: absolute;
+      }
+    }
+  }
+  .notice{
+    font-size: 12px;
+    .update{
+      display: inline-block;
+      background-color: rgba(0, 0, 0, .2);
+      border-radius: 5px;
+      padding: 2px 5px;
+      margin-right: 2px;
+    }
+  }
+}
+
+.level-div{
+  background: white;
+  .level-notice{
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    padding-bottom: 10px;
+  }
+  .levels{
+    display: flex;
+    align-items: center;
+    a{
+      flex: 2;
+      display: inline-block;
+      padding-left: 0;
+      margin: 0;
+      font-size: 12px;
+      color: #6d6d6d;
+      text-decoration: none;
+      .level-item{
+        text-align: center;
+        padding-bottom: 5px;
+      }
+      .icon{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+      }
+      &.active{
+        border-bottom: 2px solid #f39826;
+      }
+      &.level1{
+        .level-item{
+          .icon{
+            background: url("../image/ordinary_member_unchecked.svg") no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+          }
+        }
+        &.checked{
+          .level-item{
+            .icon{
+              background: url("../image/ordinary_member_select.svg") no-repeat;
+              background-size: 100% 100%;
+              background-position: center center;
+            }
+          }
+        }
+      }
+      &.level2{
+        .level-item{
+          .icon{
+            background: url("../image/silver_member_select_unchecked.svg") no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+          }
+        }
+        &.checked{
+          .level-item{
+            .icon{
+              background: url("../image/silver_member_select.svg") no-repeat;
+              background-size: 100% 100%;
+              background-position: center center;
+            }
+          }
+        }
+      }
+      &.level3{
+        .level-item{
+          .icon{
+            background: url("../image/gold_member_unchecked.svg") no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+          }
+        }
+        &.checked{
+          .level-item{
+            .icon{
+              background: url("../image/gold_member_select.svg") no-repeat;
+              background-size: 100% 100%;
+              background-position: center center;
+            }
+          }
+        }
+      }
+      &.level4{
+        .level-item{
+          .icon{
+            background: url("../image/diamond_member_unchecked.svg") no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+          }
+        }
+        &.checked{
+          .level-item{
+            .icon{
+              background: url("../image/diamond_member_select.svg") no-repeat;
+              background-size: 100% 100%;
+              background-position: center center;
+            }
+          }
+        }
+      }
+    }
+    .line{
+      flex: 1;
+      height: 1px;
+      background-color: #6d6d6d;
+      margin-left: -10px;
+      margin-right: -10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: -30px;
+    }
+  }
+}
+
+.level-box{
+  background: #f2f2f2;
+  height: 270px;
+  overflow: hidden;
+  .level-div{
+    background: transparent;
+    height: 100%;
+    .pointer{
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-bottom: 10px solid white;
+      position: relative;
+      top: 5px;
+      &.pointer1{
+        left: 5%;
+      }
+      &.pointer2{
+        left: 33%;
+      }
+      &.pointer3{
+        left: 60%;
+      }
+      &.pointer4{
+        left: 88%;
+      }
+    }
+    .container{
+      text-align: center;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-row-gap: 20px;
+      padding-top: 20px;
+      background: white;
+      .line-div{
+        display: block;
+        text-decoration: none;
+        .icon{
+          img{
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .title{
+          font-size: 12px;
+          color: #6d6d6d;
+        }
+      }
+    }
+  }
+}

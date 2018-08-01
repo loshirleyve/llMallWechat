@@ -1,0 +1,192 @@
+html {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+}
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  bottom: 0;
+  color: #4d4d4d;
+}
+#myCreditsExchange {
+  background-color: #1491ee;
+  padding: 10px 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.container {
+  background-color: #fff;
+  height: 100%;
+}
+.container .title {
+  padding: 22px 20px;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+.container .title .line {
+  height: 1px;
+  background-color: #f2f2f2;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 35px;
+  z-index: -1;
+}
+.container .title .text {
+  background-color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.container .title .text .score {
+  color: #149afb;
+}
+.container .ticket {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 32px;
+  padding-bottom: 43px;
+  text-align: center;
+  background: url("../image/Voucher.png") no-repeat;
+  background-size: 100% 100%;
+  color: #ffee00;
+  font-size: 62px;
+}
+.container .ticket:before {
+  content: '￥';
+  font-size: 31px;
+}
+.container .ticket:after {
+  content: '无门槛现金券';
+  font-size: 14px;
+  color: #fff;
+}
+.container .info {
+  font-size: 14px;
+  line-height: 26px;
+  padding-bottom: 115px;
+}
+.container .info .yellow {
+  color: #f39826;
+}
+.container > .line {
+  height: 16px;
+  position: relative;
+}
+.container > .line:before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  color: #1491ee;
+  background-color: #1491ee;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -8px;
+  z-index: 1;
+}
+.container > .line:after {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  color: #1491ee;
+  background-color: #1491ee;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -8px;
+  z-index: 1;
+}
+.container > .line .border-line {
+  border-top: 1px dashed #cac8ca;
+  transform: translateY(6px);
+}
+.container .btn {
+  padding: 30px;
+  text-align: center;
+}
+.container .btn button {
+  padding: 9px 25px 7px 25px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #1491ee;
+  box-shadow: 0 8px 20px 0 rgba(20, 154, 250, 0.3);
+  border-radius: 20px;
+  border: none;
+}
+.credits-pop-wrap {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20%;
+  width: 60%;
+  margin: auto;
+}
+.credits-pop-wrap .close-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+.credits-pop-wrap .line {
+  width: 2px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: -30px;
+  background-color: white;
+}
+.credits-pop-wrap .content {
+  border-radius: 5px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.credits-pop-wrap .content .title {
+  border-top: 2px solid #1492f0;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.credits-pop-wrap .content img {
+  width: 80px;
+  height: 55px;
+}
+.credits-pop-wrap .content .btn {
+  text-align: center;
+  padding-top: 17px;
+}
+.credits-pop-wrap .content .btn button {
+  border-radius: 30px;
+  border: none;
+  background-color: #1491ee;
+  color: white;
+  font-size: 14px;
+  padding: 8px 44px;
+}

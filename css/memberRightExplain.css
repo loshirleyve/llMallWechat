@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  padding-top: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+.content {
+  height: 100%;
+  padding: 38px 35px 35px 35px;
+  background-color: #ffffff;
+}
+.content .pic {
+  border-radius: 10px;
+  background: url("../image/background4_I6.png") no-repeat;
+  background-size: 100% 100%;
+}
+.content .pic img {
+  display: block;
+  width: 126px;
+  margin: auto;
+}
+.content .pic .text {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 61px;
+}
+.content .explain {
+  padding-left: 14px;
+  padding-right: 7px;
+}
+.content .explain.title {
+  border-left: 2px solid #149afa;
+  line-height: 14px;
+}
+.content .explain.text {
+  color: #4d4d4d;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="&#x56FE;&#x5C42;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="60px" height="60px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<path id="XMLID_129_" style="fill:#8CAAFF;" d="M51.548,266.129"/>
+<circle id="XMLID_2450_" style="fill:#FFFFFF;" cx="30" cy="30" r="30"/>
+<g id="XMLID_427_">
+	<linearGradient id="XMLID_328_" gradientUnits="userSpaceOnUse" x1="10" y1="30" x2="50" y2="30">
+		<stop  offset="0" style="stop-color:#149CFD"/>
+		<stop  offset="1" style="stop-color:#1491EE"/>
+	</linearGradient>
+	<path id="XMLID_428_" style="fill:url(#XMLID_328_);" d="M50,45.371c0,1.25-0.5,3-2.75,3h-34.5c-2.25,0-2.75-1.75-2.75-3
+		c0-4.25,3.75-10.25,10.5-10.25c0,0,2,3.25,9.5,3.25c7.5,0,9.5-3.25,9.5-3.25C46.25,35.122,50,41.121,50,45.371L50,45.371z
+		 M30.22,11.628c-5.794,0-10.491,5.25-10.491,11.727c0,6.477,4.697,11.727,10.491,11.727c5.794,0,10.49-5.25,10.49-11.727
+		C40.71,16.879,36.014,11.628,30.22,11.628L30.22,11.628z M30.22,11.628"/>
+</g>
+</svg>

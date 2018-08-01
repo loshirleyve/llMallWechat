@@ -1,0 +1,92 @@
+body{
+  margin: 0;
+  font-size: 15px;
+}
+
+.wrap{
+  background: url("../image/background_tuoyuan.png") no-repeat;
+  background-size: 100% 44%;
+  background-position: top center;
+  padding-top: 47px;
+  text-align: center;
+  .logo{
+    display: inline-block;
+    margin-bottom: 37px;
+  }
+  .wrap-content{
+    background: transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    .content{
+      background: white;
+      box-shadow: 0px 6px 20px 0px rgba(20, 149, 243, 0.1);
+      border-radius: 5px;
+      padding: 47px 35px;
+      .line-item{
+        border-bottom: 1px solid #e6e6e6;
+        text-align: left;
+        padding: 5px;
+        padding-top: 37px;
+        position: relative;
+        img{
+          width: 14px;
+          vertical-align: -2px;
+        }
+        input{
+          display: inline-block;
+          border: none;
+          outline: none;
+        }
+        ::-webkit-input-placeholder{
+          color: #cacaca;
+        }
+        input[type=button]{
+          position: absolute;
+          right: 0;
+          bottom: 5px;
+          color: #1496f5;
+          background: none;
+        }
+      }
+      .commit-btn{
+        padding: 37px 7px 14px 7px;
+        .commit{
+          width: 100%;
+          outline: none;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          background-image: linear-gradient(0deg, #149cfd 0%, #1491ee 100%), linear-gradient(#0c232f, #0c232f);
+          background-blend-mode: normal, normal;
+          box-shadow: 0px 8px 20px 0px
+          rgba(20, 154, 250, 0.3);
+          border-radius: 40px;
+          font-size: 15px;
+          color: #ffffff;
+          border: none;
+        }
+      }
+    }
+  }
+  .regiser{
+    position: relative;
+    margin-top: 50px;
+    .line{
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      top: 10px;
+      bottom: 0;
+      height: 1px;
+      background: #e6e6e6;
+      z-index: -1;
+    }
+    a{
+      color: #6d6d6d;
+      text-decoration: none;
+      background: white;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

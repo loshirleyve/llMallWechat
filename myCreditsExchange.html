@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>我的积分</title>
+    <link rel="stylesheet" href="./css/myCreditsExchange.css">
+</head>
+<body>
+<div id="myCreditsExchange">
+    <div class="container">
+        <div class="title">
+            <div class="line"></div>
+            <span class="text">本次兑换需<span class="score">68</span>积分</span>
+        </div>
+        <div class="ticket">5</div>
+        <ul class="info">
+            <li>兑换后自动放入<span class="yellow">【会员中心-我的券码-优惠券】</span></li>
+            <li>优惠券一经兑出不予退换</li>
+            <li>领取后<span class="yellow">3天</span>有效 </li>
+            <li>有效日期：2018年7月3日-2018年7月5日</li>
+        </ul>
+        <div class="line">
+            <div class="border-line"></div>
+        </div>
+        <div class="btn">
+            <button class="exchangeBtn">立即兑换</button>
+        </div>
+    </div>
+</div>
+<div class="js-credits-pop mask" hidden>
+    <div class="credits-pop-wrap">
+        <img class="close-icon" src="./image/close.png" alt="">
+        <span class="line"></span>
+        <div class="content">
+            <div class="title">领取成功！</div>
+            <img src="./image/success.png" alt="">
+            <div class="btn">
+                <button>去查看</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const exchangeBtn = document.querySelector('.exchangeBtn');
+    const creditsInfo = document.querySelector('.js-credits-pop');
+    const closeBtn = document.querySelector('.close-icon');
+    exchangeBtn.addEventListener('click', function (e) {
+        creditsInfo.removeAttribute('hidden');
+    })
+    closeBtn.addEventListener('click', function (e) {
+        creditsInfo.setAttribute('hidden', 'hidden');
+    })
+</script>
+</body>
+</html>

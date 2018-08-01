@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  background: #f2f2f2;
+}
+.banner {
+  background: url(../image/background3_I6.png) no-repeat;
+  background-position: left top;
+  background-size: 100% 100%;
+  position: relative;
+  padding: 20px 15px;
+  color: #ffffff;
+}
+.banner .rule {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 0;
+  font-size: 12px;
+  position: absolute;
+  right: 16px;
+  top: 5px;
+}
+.banner .head .user {
+  width: 28px;
+  height: 28px;
+  vertical-align: -7px;
+}
+.banner .head .level {
+  font-size: 16px;
+}
+.banner .head .face {
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+}
+.banner .progress-container {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.banner .progress-container .progress-wrap {
+  width: 50%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  position: relative;
+}
+.banner .progress-container .progress-wrap .progress-fill {
+  display: inline-block;
+  background: #ffee00;
+  width: 0;
+  height: 2px;
+  position: absolute;
+}
+.banner .progress-container .progress-wrap .progress-info {
+  width: 34px;
+  height: 24px;
+  left: 0;
+  top: -26px;
+  transform: translateX(-50%);
+  background: url("../image/location.png") no-repeat;
+  background-size: 34px 24px;
+  font-size: 12px;
+  text-align: center;
+  background-position: center center;
+  position: absolute;
+}
+.banner .notice {
+  font-size: 12px;
+}
+.banner .notice .update {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin-right: 2px;
+}
+.level-div {
+  background: white;
+}
+.level-div .level-notice {
+  font-size: 15px;
+  text-align: center;
+  line-height: 35px;
+  padding-bottom: 10px;
+}
+.level-div .levels {
+  display: flex;
+  align-items: center;
+}
+.level-div .levels a {
+  flex: 2;
+  display: inline-block;
+  padding-left: 0;
+  margin: 0;
+  font-size: 12px;
+  color: #6d6d6d;
+  text-decoration: none;
+}
+.level-div .levels a .level-item {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.level-div .levels a .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.level-div .levels a.active {
+  border-bottom: 2px solid #f39826;
+}
+.level-div .levels a.level1 .level-item .icon {
+  background: url("../image/ordinary_member_unchecked.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level1.checked .level-item .icon {
+  background: url("../image/ordinary_member_select.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level2 .level-item .icon {
+  background: url("../image/silver_member_select_unchecked.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level2.checked .level-item .icon {
+  background: url("../image/silver_member_select.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level3 .level-item .icon {
+  background: url("../image/gold_member_unchecked.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level3.checked .level-item .icon {
+  background: url("../image/gold_member_select.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level4 .level-item .icon {
+  background: url("../image/diamond_member_unchecked.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels a.level4.checked .level-item .icon {
+  background: url("../image/diamond_member_select.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.level-div .levels .line {
+  flex: 1;
+  height: 1px;
+  background-color: #6d6d6d;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -30px;
+}
+.level-box {
+  background: #f2f2f2;
+  height: 270px;
+  overflow: hidden;
+}
+.level-box .level-div {
+  background: transparent;
+  height: 100%;
+}
+.level-box .level-div .pointer {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: relative;
+  top: 5px;
+}
+.level-box .level-div .pointer.pointer1 {
+  left: 5%;
+}
+.level-box .level-div .pointer.pointer2 {
+  left: 33%;
+}
+.level-box .level-div .pointer.pointer3 {
+  left: 60%;
+}
+.level-box .level-div .pointer.pointer4 {
+  left: 88%;
+}
+.level-box .level-div .container {
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  padding-top: 20px;
+  background: white;
+}
+.level-box .level-div .container .line-div {
+  display: block;
+  text-decoration: none;
+}
+.level-box .level-div .container .line-div .icon img {
+  width: 25px;
+  height: 25px;
+}
+.level-box .level-div .container .line-div .title {
+  font-size: 12px;
+  color: #6d6d6d;
+}

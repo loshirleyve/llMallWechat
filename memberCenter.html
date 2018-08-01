@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="./css/memberCenter.css">
+</head>
+<body>
+<div id="member">
+    <div class="banner">
+        <a class="right" href="./myRight.html">
+            <img src="./image/membership_rights.svg" alt="">
+            会员权益
+        </a>
+        <ul class="head">
+            <li><img src="./image/head_portrait.svg" alt=""></li>
+            <li class="name"><span>昵称：</span>蘑菇不会开花</li>
+            <li class="level"><img src="./image/ordinary_member.svg" alt="">普通会员</li>
+        </ul>
+        <span class="sign">
+            <img src="./image/sign_in_tick.png" alt="">
+            签到
+        </span>
+    </div>
+
+    <div class="total">
+        <ul class="total-item">
+            <li><img src="./image/my_account.svg" alt=""></li>
+            <li class="name">我的账户</li>
+            <li class="val">8.00元</li>
+        </ul>
+        <ul class="total-item">
+            <li><img src="./image/head_portrait.svg" alt=""></li>
+            <li class="name">我的券码</li>
+            <li class="val">0张</li>
+        </ul>
+        <ul class="total-item">
+            <li><img src="./image/my_points.svg" alt=""></li>
+            <li class="name">我的积分</li>
+            <li class="val">20分</li>
+        </ul>
+    </div>
+
+    <div class="items-wrap">
+        <div class="items">
+            <ul class="item br-1px bb-1px">
+                <li><img src="./image/activity_exchange_code.svg" alt=""></li>
+                <li class="name">活动兑换码</li>
+            </ul>
+            <ul class="item br-1px bb-1px">
+                <li><img src="./image/my_coupon_code.svg" alt=""></li>
+                <li class="name">绑定会员卡</li>
+            </ul>
+            <ul class="item br-1px bb-1px">
+                <li><img src="./image/immediat_recharge.svg" alt=""></li>
+                <li class="name">立即充值</li>
+            </ul>
+        </div>
+        <div class="items">
+            <ul class="item br-1px">
+                <li><img src="./image/customer_complaint_and_feedback.svg" alt=""></li>
+                <li class="name">客服与反馈</li>
+            </ul>
+            <ul class="item br-1px">
+                <li><img src="./image/purchase.svg" alt=""></li>
+                <li class="name">购买</li>
+            </ul>
+            <ul class="item br-1px">
+                <li><img src="./image/my_order.svg" alt=""></li>
+                <li class="name">我的订单</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sign-pop mask" hidden>
+        <div class="sign-pop-wrap">
+            <img class="close-icon" src="./image/close.png" alt="">
+            <span class="line"></span>
+            <div class="container">
+                <div class="title">已领1积分</div>
+                <img src="./image/success.png" alt="">
+                <div class="text">签到成功</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const signIcon = document.querySelector('.sign');
+    const signInfo = document.querySelector('.sign-pop');
+    const closeBtn = document.querySelector('.close-icon');
+    signIcon.addEventListener('click', function (e) {
+        signInfo.removeAttribute('hidden');
+    })
+    closeBtn.addEventListener('click', function (e) {
+        signInfo.setAttribute('hidden', 'hidden');
+    })
+</script>
+</body>
+</html>

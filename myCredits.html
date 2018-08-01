@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>我的积分</title>
+    <link rel="stylesheet" href="./css/myCredits.css">
+</head>
+<body>
+<div id="credits">
+    <div class="banner">
+        <a class="info" href="./creditRule.html">
+            <img src="./image/rule.svg" alt="">
+            积分规则
+        </a>
+        <div class="banner-content">
+            <ul class="credits">
+                <li class="credit-num">120</li>
+                <li>可用积分</li>
+            </ul>
+        </div>
+    </div>
+    <div class="sign-route">
+        <div class="line"></div>
+        <div class="route">
+            <div class="route-item checked">
+                <div class="icon">1</div>
+                <div class="text">+1</div>
+            </div>
+            <div class="route-item">
+                <div class="icon">2</div>
+                <div class="text">+2</div>
+            </div>
+            <div class="route-item">
+                <div class="icon">3</div>
+                <div class="text">+3</div>
+            </div>
+            <div class="route-item">
+                <div class="icon">4</div>
+                <div class="text">+4</div>
+            </div>
+            <div class="route-item">
+                <div class="icon">5</div>
+                <div class="text">+5</div>
+            </div>
+            <div class="route-item">
+                <div class="icon">6</div>
+                <div class="text">+6</div>
+            </div>
+            <div class="route-item finish">
+                <img class="gift js-sign-rule" src="./image/gift.png" alt="">
+                <div class="icon">7</div>
+                <div class="text">+7</div>
+            </div>
+        </div>
+    </div>
+    <div class="sign-explain">
+        <span class="left">小贴士:已连续签到1天,再连续签到6天即可获得额外奖励。</span>
+        <button class="js-sign-btn">签到</button>
+    </div>
+    <div class="credits-change">
+        <div class="title">
+            <img src="./image/V.svg" alt="">
+            积分兑换
+        </div>
+        <div class="content">
+            <div class="ticket valid">
+                <div class="img">5</div>
+                <div class="title">无门槛现金券</div>
+                <div class="amount">28积分</div>
+                <a class="btn" href="./myCreditsExchange.html">立即兑换</a>
+            </div>
+            <div class="ticket">
+                <div class="img">10</div>
+                <div class="title">无门槛现金券</div>
+                <div class="amount">88积分</div>
+                <a class="btn">立即兑换</a>
+            </div>
+            <div class="ticket">
+                <div class="img">20</div>
+                <div class="title">无门槛现金券</div>
+                <div class="amount">128积分</div>
+                <a class="btn">立即兑换</a>
+            </div>
+        </div>
+    </div>
+    <div class="credits-record">
+        <div class="title">
+            <span class="left title-item">
+              <img src="./image/V.svg" alt="">
+              积分记录
+            </span>
+            <div class="right title-item">
+              <select>
+                <option value="1">全部</option>
+                <option value="2">获取</option>
+                <option value="3">使用</option>
+              </select>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item">
+                <ul class="left item-child">
+                    <li>消费送积分</li>
+                    <li>2018-6-26 16:44:20</li>
+                </ul>
+                <div class="right  item-child">+1</div>
+            </div>
+            <div class="item">
+                <ul class="left item-child">
+                    <li>每日签到奖励</li>
+                    <li>2018-6-26 16:44:20</li>
+                </ul>
+                <div class="right  item-child">+1</div>
+            </div>
+            <div class="item">
+                <ul class="left item-child">
+                    <li>消费送积分</li>
+                    <li>2018-6-26 16:44:20</li>
+                </ul>
+                <div class="right  item-child">+3</div>
+            </div>
+            <div class="item">
+                <ul class="left item-child">
+                    <li>每日签到奖励</li>
+                    <li>2018-6-26 16:44:20</li>
+                </ul>
+                <div class="right  item-child">+1</div>
+            </div>
+            <div class="item">
+                <ul class="left item-child">
+                    <li>消费送积分</li>
+                    <li>2018-6-26 16:44:20</li>
+                </ul>
+                <div class="right  item-child">+1</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="js-sign-rule-panel mask" hidden>
+    <div class="sign-rule-wrap">
+        <img class="js-close-icon close-icon" src="./image/close.png" alt="">
+        <span class="line"></span>
+        <div class="content">
+            <div class="title">签到活动规则</div>
+            <div class="text">
+             1.每人每天最多累计签到一次，签到后可获得积分奖励.<br/><br/>
+             2.连续签到7天可获得额外的积分奖励，连续签到第8天将清零重新计算。<br/><br/>
+             3.如果中断签到，连续签到的记录将清零，从第一天重新计算开始。<br/><br/>
+            </div>
+            <div class="btn">
+                <button>去查看</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="js-sign-pop mask" hidden>
+    <div class="sign-pop-wrap">
+        <img class="js-sign-close-icon close-icon" src="./image/close.png" alt="">
+        <span class="line"></span>
+        <div class="container">
+            <div class="title">已领1积分</div>
+            <img src="./image/success.png" alt="">
+            <div class="text">签到成功！</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const signRule = document.querySelector('.js-sign-rule');
+    const signRuleInfo = document.querySelector('.js-sign-rule-panel');
+    const closeBtn = document.querySelector('.js-close-icon');
+    signRule.addEventListener('click', function () {
+        signRuleInfo.removeAttribute('hidden');
+    });
+    closeBtn.addEventListener('click', function () {
+        signRuleInfo.setAttribute('hidden', 'hidden');
+    });
+
+    const signBtn = document.querySelector('.js-sign-btn');
+    const signInfo = document.querySelector('.js-sign-pop');
+    const signCloseBtn = document.querySelector('.js-sign-close-icon');
+    signBtn.addEventListener('click', function (e) {
+        signInfo.removeAttribute('hidden');
+    })
+    signCloseBtn.addEventListener('click', function (e) {
+        signInfo.setAttribute('hidden', 'hidden');
+    })
+</script>
+</body>
+</html>
